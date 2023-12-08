@@ -1,30 +1,28 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: linear-gradient(135deg,#00B7D4, #505488, #2F3F80,#161569,
-                                        #5A4894,#A950A1,#FF7CAE);
+    background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
     text-align: center;
-    padding: 50px;
+    padding: 5vw; /* Se cambió a unidades relativas para ser más adaptable */
     margin: 0;
-    padding: 0;
-    background-image: 500%;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal en dispositivos móviles */
     animation: fanimado 10s infinite;
-    /*overflow: hidden;*/
 }
-@keyframes identifier {
-    
-    0%{
+
+@keyframes fanimado {
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+    100% {
         background-position: 0% 50%;
     }
 }
 
 .login-container {
-    width: 300px;
+    width: 90%; /* Cambiado a un porcentaje para ser más adaptable */
+    max-width: 300px; /* Añadido un ancho máximo */
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -128,4 +126,16 @@ button {
    
     width: 100%;
     text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .title h1 {
+        font-size: 40px; /* Tamaño de fuente reducido para dispositivos móviles */
+    }
+
+    .imagen1 img {
+        width: 100%; /* Hacer la imagen completamente ancha en dispositivos móviles */
+        height: auto;
+    }
+
+    /* Otros estilos específicos para dispositivos móviles... */
 }
