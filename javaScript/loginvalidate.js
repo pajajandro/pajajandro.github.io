@@ -7,7 +7,7 @@ function validateForm() {
         return false;
     }
 
-    if (password !== "3022nit" && username !== "nitMirabilis") {
+    if (password !== "3022nit" && username !== "Nayra") {
         alert('Las contraseñas o el usuario no coinciden.');
         return false;
     }
