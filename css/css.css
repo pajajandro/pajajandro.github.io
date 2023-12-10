@@ -133,18 +133,18 @@ button {
 /* Otros estilos... */
 
 /* Estilos específicos para dispositivos móviles */
-@media only screen and (max-width: 828px) {
+@media only screen and (max-width: 1125px) {
     .body{
         width: 100%;
         height: 100%;
     }
     .title h1{
-        font-size: 40px;
+        font-size: 60px;
         margin: 0;
         width: 20px;
         height: 30px;
-        left: 350px;
-        top: 225px;
+        left: 450px;
+        top: 300px;
     }
     .title{
         width: 100%;
@@ -157,13 +157,13 @@ button {
         width: 100%;
     }
     .contenedor img{
-        height: 250px;
+        height: 350px;
         width: auto;
     }
 
     .contenedorfotos img{
-        height: 250px;
-        width: 240px;
+        height: 340px;
+        width: 340px;
     }
     .contenedorfotos div{
         margin-right: 25px;
@@ -171,9 +171,8 @@ button {
     }
 
     .contenedorfotos video{
-       width: auto;
-       height: 100px;
-       margin-right: 25px;
+        height: 300px;
+        width: 340px;
     }
     .contenedorfinal h1{
         font-size: 40;
