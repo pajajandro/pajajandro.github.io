@@ -6,23 +6,12 @@ body {
     margin: 0;
     overflow-x: hidden; /* Evita la barra de desplazamiento horizontal en dispositivos móviles */
     animation: fanimado 10s infinite;
+    /*width: 100%;  Ajusta el ancho del body al 100% */
 }
 
-@keyframes fanimado {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
 .login-container {
-    width: 90%; /* Cambiado a un porcentaje para ser más adaptable */
-    max-width: 300px; /* Añadido un ancho máximo */
+    width: 300px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -52,7 +41,6 @@ button {
 }
 
 .title img{
-   
     width: 100%;
     height: auto;
     display: block;
@@ -87,7 +75,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 20px; /* Ajusta según sea necesario */
+    margin: 10px; /* Ajusta según sea necesario */
+}
+.descripcion{
+    margin-right: 10px;
 }
 .contenedorfotos img{
     height: 400px;
@@ -123,19 +114,66 @@ button {
     text-transform: uppercase; /* Puedes ajustar según tus preferencias */
 }
 .contenedorfinal{
-   
     width: 100%;
     text-align: center;
 }
+
+
+.login-container {
+    width: 90%; /* Cambiado a un porcentaje para ser más adaptable */
+    max-width: 300px; /* Añadido un ancho máximo */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Otros estilos... */
+
+/* Estilos específicos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
-    .title h1 {
-        font-size: 40px; /* Tamaño de fuente reducido para dispositivos móviles */
+    .body{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 30px;
+        margin: 0;
+        width: 20px;
+        height: 30px;
+        left: 130px;
+        top: 125px;
+    }
+    .title img{
+        height: 200px;
+    }
+    .contenedor{
+        width: 100%;
+    }
+    .contenedor img{
+        height: 100px;
+        width: auto;
     }
 
-    .imagen1 img {
-        width: 100%; /* Hacer la imagen completamente ancha en dispositivos móviles */
-        height: auto;
+    .contenedorfotos img{
+        height: 100px;
+        width: auto;
     }
+    .contenedorfotos div{
+        margin-right: 25px;
+        margin-left: 2px;
+    }
+
+    .contenedorfotos video{
+       width: auto;
+       height: 100px;
+       margin-right: 25px;
+    }
+    .contenedorfinal h1{
+        font-size: 40;
+        width: auto;
+    }
+
 
     /* Otros estilos específicos para dispositivos móviles... */
 }
