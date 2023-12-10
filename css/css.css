@@ -32,7 +32,7 @@ input {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #000000;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -120,13 +120,14 @@ button {
 
 
 .login-container {
-    width: 90%; /* Cambiado a un porcentaje para ser más adaptable */
+    width: 100%; /* Cambiado a un porcentaje para ser más adaptable */
     max-width: 300px; /* Añadido un ancho máximo */
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #f859b8;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
 }
 
 /* Otros estilos... */
@@ -179,6 +180,17 @@ button {
         width: auto;
     }
 
-
+    .login-container {
+        width: 500px; /* Cambiado a un porcentaje para ser más adaptable */
+        max-width: 600px; /* Añadido un ancho máximo */
+        margin: 0 auto;
+        background-color: #f16ad1;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 500px;
+    }
+    
+  
     /* Otros estilos específicos para dispositivos móviles... */
 }
