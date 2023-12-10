@@ -145,7 +145,8 @@ button {
         top: 125px;
     }
     .title img{
-        height: 200px;
+        height: 500px;
+        width: auto;
     }
     .contenedor{
         width: 100%;
